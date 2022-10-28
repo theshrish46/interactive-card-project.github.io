@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Interactive Card</title>
+</head>
+<body>
+
+  <section class="main">
+    <div class="img">
+      
+      <div class="dbt">
+        <p class="id">1234 5678 9807</p>
+        <span class="name">lorem lorem</span>
+        <span class="valid">00/00</span>
+      </div>
+
+      <div class="dum">
+      </div>
+    </div>
+
+
+
+    <div class="form-sec">
+      <form action="/index.html" method="GET">
+
+      <div class="crd">
+        <label for="name">Cardholder Name</label>
+        <input type="text" id="name" class="crdname" placeholder="e.g. John Enfield">
+      </div>
+
+      <div class="crd">
+      <label for="number">Card Number</label>
+        <input type="text" id="number" class="crdnum" placeholder="e.g. 1234 5678 4591">
+      </div>
+
+
+      <div class="datecvc">
+
+      <div class="crd">
+      <label for="date" class="datecls">Exp. Date(mm/yy)</label>
+        <input type="text" id="date-m" class="crdvld" placeholder="MM">
+        <input type="text" id="date-y" class="crdvld" placeholder="YY">
+      </div>  
+
+      <div class="crd">
+      <label for="cvc" class="cvccls">CVC</label>
+        <input type="text" id="cvc" class="crdcvc" placeholder="e.g. 123">
+      </div>
+
+      </div>
+
+      <div class="crd">
+      <button class="crdsub" id="subbtn">Confirm</button>
+        </div>
+      </form>
+    </div>
+
+
+
+
+    <div class="thank">
+      <div class="thank-msg">
+        <img src="/images/icon-complete.svg" alt="img" class="thank-img">
+        <h5 class="thank-head">THANK YOU!</h5>
+        <p class="thank-para">We'vs added your details</p>
+        <button class="cont">Continue</button>
+      </div>
+    </div>
+  </section>
+  
+  <script src="index.js"></script>
+</body>
+</html>
