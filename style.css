@@ -92,14 +92,6 @@ body{
 }
 
 
-
-
-
-
-
-
-
-
 .dum{
     position: absolute;
     top: 22em;
@@ -113,9 +105,10 @@ body{
     width: 17em;
 }
 
-.form-sec{
-    /* display: none; */
-}
+
+
+/* ########################################################## */
+
 
 .thank{
     width: 70%;
@@ -123,7 +116,6 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    display: none;
 }
 
 .thank-img{
@@ -141,7 +133,7 @@ body{
 
 .thank-para{
     font-size: 1.5rem;
-    margin: 1.5rem auto;
+    margin: 1.3rem auto;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     letter-spacing: 0.1rem;
 }
@@ -150,12 +142,21 @@ body{
     background-color: #26004a;
     margin: 2rem auto;
     height: 2.3em;
-    width: 100%;
+    width: 50%;
     color: white;
     border-radius: 10px;
     font-size: 1.3rem;
-
+    
 }
+
+
+/* ################################################################ */
+
+
+.form-sec{
+    /* display: none; */
+}
+
 
 form{
     text-align: justify;
@@ -230,4 +231,148 @@ label{
     background-color: #26004a;
     color: white;
     opacity: 1;
+}
+
+
+
+
+@media screen and (max-width: 1440px) and (max-height: 900px){
+    
+    .dbt{
+        /* border: 2px solid white; */
+        position: absolute;
+        top: 13em;
+        left: 20em;
+        border-radius: 10px;
+        background: url(/images/bg-card-front.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 7em;
+        width: 14em;
+    }
+    
+    
+    .id{
+        color: white;
+        font-family: sans-serif;
+        font-size: 0.75rem;
+        position: absolute;
+        bottom: 2.5rem;
+        width: 100%;
+        left: 0.95rem;
+        letter-spacing: 0.3rem;
+    }
+    
+    
+    .dbt>span:nth-of-type(1){
+        font-size: 0.7rem;
+        position: absolute;
+        bottom: 0.95rem;
+        width: 100%;
+        left: 1rem;
+        letter-spacing: 0.2em;
+    }
+    
+    .dbt>span:nth-of-type(2){
+        position: absolute;
+        bottom: 1rem;
+        font-size: 0.5rem;
+        width: 100%;
+        right: -11rem;
+        letter-spacing: 0.1rem;
+    }
+    
+    .dum{
+        position: absolute;
+        top: 22em;
+        left: 22em;
+        border-radius: 10px;
+        background: url(/images/bg-card-back.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 8em;
+        width: 15em;
+    }
+    
+    /* #################################################################### */
+
+
+    label{
+        font-size: 0.8rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 500;
+    }
+
+    #number, #name{
+        border: 1.9px solid rgb(150, 144, 144);
+        border-radius: 8px;
+        height: 2.8em;
+        width: 20em;
+        padding: 0 0.5rem;
+        font-weight: 500;
+        font-size: 0.8rem;
+        opacity: 0.7;
+    }
+    
+    .datecvc{
+        opacity: 0.7;
+        font-size: 0.8rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .crdcvc, .crdvld{
+        padding: 0 0.8rem;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+    
+    
+    .crd:nth-of-type(3){
+        display: inline-block;
+    }
+
+    #date-m, #date-y{
+        border: 1.9px solid rgb(150, 144, 144);
+        border-radius: 8px;
+        margin: 0.2rem;
+        height: 2.8em;
+        width: 4em;
+        opacity: 0.9;
+    }
+
+    .datecls, .cvccls{
+        display: block;
+    }
+
+    #cvc{
+        border-radius: 8px;
+        border: 1.9px solid rgb(150, 144, 144);
+        height: 2.8em;
+        width: 9em;
+        opacity: 0.9;
+    }
+    
+    .crdsub{
+        border: none;
+        border-radius: 10px;
+        padding: 0.8rem 0.3rem;
+        width: 100%;
+        font-size: 1rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: #26004a;
+        color: white;
+        opacity: 1;
+    }
+    
+
+
+
+
+
+
+
+
 }
