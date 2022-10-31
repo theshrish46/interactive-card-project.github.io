@@ -97,7 +97,7 @@ body{
     top: 22em;
     left: 25em;
     border-radius: 10px;
-    background: url(/images/bg-card-back.png);
+    background: url(./images/bg-card-back.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
