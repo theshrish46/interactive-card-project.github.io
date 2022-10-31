@@ -31,7 +31,7 @@ body{
 .img{
     margin: 0;
     padding: 0;
-    background: url(/images/bg-main-desktop.png);
+    background: url(./images/bg-main-desktop.png);
     width: 30%;
 }
 
@@ -48,7 +48,7 @@ body{
     top: 10em;
     left: 20em;
     border-radius: 10px;
-    background: url(/images/bg-card-front.png);
+    background: url(./images/bg-card-front.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -111,6 +111,7 @@ body{
 
 
 .thank{
+    margin: auto auto;
     width: 70%;
     display: flex;
     justify-content: center;
@@ -238,13 +239,23 @@ label{
 
 @media screen and (max-width: 1440px) and (max-height: 900px){
     
+    .main{
+        /* background-color: rgb(193, 190, 190); */
+        /* border: 2px dotted red; */
+        margin: 2em auto;
+        height: 75%;
+        width: 60%;
+        display: flex;
+        box-shadow: 15px 15px 15px -12px rgb(86, 82, 82);
+    }
+    
     .dbt{
         /* border: 2px solid white; */
         position: absolute;
         top: 13em;
         left: 20em;
         border-radius: 10px;
-        background: url(/images/bg-card-front.png);
+        background: url(./images/bg-card-front.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -288,7 +299,7 @@ label{
         top: 22em;
         left: 22em;
         border-radius: 10px;
-        background: url(/images/bg-card-back.png);
+        background: url(./images/bg-card-back.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -366,7 +377,236 @@ label{
         color: white;
         opacity: 1;
     }
+
+    /* ######################################################################### */
     
+    .thank{
+        margin: auto auto;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .thank-img{
+        margin: 1rem auto;
+        height: 3.8em;
+        width: 3.8em;
+    }
+    
+    .thank-head{
+        font-size: 2rem;
+        margin: 1rem auto;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        letter-spacing: 0.2rem;
+    }
+    
+    .thank-para{
+        font-size: 1.4rem;
+        margin: 1rem auto;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        letter-spacing: 0.1rem;
+    }
+    
+    .cont{
+        background-color: #26004a;
+        margin: 2rem auto;
+        height: 2.3em;
+        width: 50%;
+        color: white;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        
+    }
+
+}
+
+@media screen and (max-width: 1280px) and (max-height: 900px) {
+
+    .main{
+        /* background-color: rgb(193, 190, 190); */
+        /* border: 2px dotted red; */
+        margin: 2em auto;
+        height: 60%;
+        width: 100%;
+        display: flex;
+        box-shadow: 15px 15px 15px -12px rgb(86, 82, 82);
+    }
+
+    .dbt{
+        /* border: 2px solid white; */
+        position: absolute;
+        top: 10em;
+        left: 16em;
+        border-radius: 10px;
+        background: url(./images/bg-card-front.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 8em;
+        width: 14em;
+    }
+    
+    
+    .id{
+        color: white;
+        font-family: sans-serif;
+        font-size: 0.75rem;
+        position: absolute;
+        bottom: 2.5rem;
+        width: 100%;
+        left: 0.95rem;
+        letter-spacing: 0.3rem;
+    }
+    
+    
+    .dbt>span:nth-of-type(1){
+        font-size: 0.7rem;
+        position: absolute;
+        bottom: 0.95rem;
+        width: 100%;
+        left: 1rem;
+        letter-spacing: 0.2em;
+    }
+    
+    .dbt>span:nth-of-type(2){
+        position: absolute;
+        bottom: 1rem;
+        font-size: 0.5rem;
+        width: 100%;
+        right: -11rem;
+        letter-spacing: 0.1rem;
+    }
+    
+    .dum{
+        position: absolute;
+        top: 20em;
+        left: 18em;
+        border-radius: 10px;
+        background: url(./images/bg-card-back.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 8em;
+        width: 14em;
+    }
+    
+    /* #################################################################### */
+
+
+    label{
+        font-size: 0.8rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 500;
+    }
+
+    #number, #name{
+        border: 1.9px solid rgb(150, 144, 144);
+        border-radius: 8px;
+        height: 2.5em;
+        width: 18em;
+        padding: 0 0.5rem;
+        font-weight: 500;
+        font-size: 0.8rem;
+        opacity: 0.7;
+    }
+    
+    .datecvc{
+        opacity: 0.7;
+        font-size: 0.8rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .crdcvc, .crdvld{
+        padding: 0 0.8rem;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+    
+    
+    .crd:nth-of-type(3){
+        display: inline-block;
+    }
+
+    #date-m, #date-y{
+        border: 1.9px solid rgb(150, 144, 144);
+        border-radius: 8px;
+        margin: 0.2rem;
+        height: 2.5em;
+        width: 4em;
+        opacity: 0.9;
+    }
+
+    .datecls, .cvccls{
+        display: block;
+    }
+
+    #cvc{
+        border-radius: 8px;
+        border: 1.9px solid rgb(150, 144, 144);
+        height: 2.5em;
+        width: 7em;
+        opacity: 0.9;
+    }
+    
+    .crdsub{
+        border: none;
+        border-radius: 10px;
+        padding: 0.8rem 0.3rem;
+        width: 100%;
+        font-size: 1rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: #26004a;
+        color: white;
+        opacity: 1;
+    }
+
+    /* ######################################################################### */
+    
+    .thank{
+        margin: auto auto;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .thank-img{
+        margin: 1rem auto;
+        height: 3em;
+        width: 3em;
+    }
+    
+    .thank-head{
+        font-size:1.52rem;
+        margin: 1rem auto;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        letter-spacing: 0.2rem;
+    }
+    
+    .thank-para{
+        font-size: 1rem;
+        margin: 1rem auto;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        letter-spacing: 0.1rem;
+    }
+    
+    .cont{
+        background-color: #26004a;
+        margin: 2rem auto;
+        height: 2.3em;
+        width: 45%;
+        color: white;
+        border-radius: 10px;
+        font-size: 1.2rem;
+    }
+    
+}
+
+/* ################################################################################################# */
 
 
 
@@ -375,4 +615,701 @@ label{
 
 
 
+@media screen and (max-width: 1040px) and (max-height: 900px) {
+    .main{
+        /* background-color: rgb(193, 190, 190); */
+        border: 2px dotted red;
+        /* margin: 2em auto; */
+        height: 100%;
+        width: 100%;
+        display: flex;
+        box-shadow: 15px 15px 15px -12px rgb(86, 82, 82);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .img, .form-sec{
+        /* border: 2px solid green; */
+        height: 100%;
+        width: 100%;
+    }
+    
+    .img{
+        margin: auto auto;
+        padding: 0;
+        background: url(./images/bg-main-mobile.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 45%;
+    }
+    
+    .form-sec{
+        width: 100%;
+    }
+    
+    .dbt{
+        /* border: 2px solid white; */
+        z-index: 1;
+        position: absolute;
+        top: 13em;
+        left: 18em;
+        border-radius: 10px;
+        background: url(./images/bg-card-front.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 10em;
+        width: 17em;
+    }
+    
+    
+    .id{
+        color: white;
+        font-family: sans-serif;
+        font-size: 1rem;
+        position: absolute;
+        bottom: 3rem;
+        width: 100%;
+        left: 1rem;
+        letter-spacing: 0.5rem;
+    }
+    
+    .dbt>span{
+        color: white;
+        font-family: sans-serif;
+    }
+    
+    .dbt>span:nth-of-type(1){
+        font-size: 0.9rem;
+        position: absolute;
+        bottom: 1rem;
+        width: 100%;
+        left: 1rem;
+        letter-spacing: 0.3em;
+    }
+    
+    .dbt>span:nth-of-type(2){
+        position: absolute;
+        bottom: 1rem;
+        font-size: 0.8rem;
+        width: 100%;
+        right: -13rem;
+        letter-spacing: 0.1rem;
+    }
+    
+    
+    .dum{
+        position: absolute;
+        top: 7em;
+        left: 25em;
+        border-radius: 10px;
+        background: url(/images/bg-card-back.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 10em;
+        width: 17em;
+    }
+    
+    
+    
+    /* ########################################################## */
+    
+    
+    .thank{
+        margin: auto auto;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .thank-img{
+        margin: 1rem auto;
+        height: 4em;
+        width: 4em;
+    }
+    
+    .thank-head{
+        font-size: 2rem;
+        margin: 1rem auto;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        letter-spacing: 0.2rem;
+    }
+    
+    .thank-para{
+        font-size: 1.5rem;
+        margin: 1.3rem auto;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        letter-spacing: 0.1rem;
+    }
+    
+    .cont{
+        background-color: #26004a;
+        margin: 2rem auto;
+        height: 2.3em;
+        width: 50%;
+        color: white;
+        border-radius: 10px;
+        font-size: 1.3rem;
+        
+    }
+    
+    
+    /* ################################################################ */
+    
+    
+    .form-sec{
+        /* display: none; */
+    }
+    
+    
+    form{
+        text-align: justify;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    
+    label{
+        display: block;
+        padding-bottom: 0.5rem;
+    }
+    
+    .crd{
+        margin: 0.8rem;
+    }
+    
+    #number, #name{
+        border: 1.9px solid rgb(150, 144, 144);
+        border-radius: 8px;
+        height: 3em;
+        width: 25em;
+        padding: 0 1rem;
+        font-weight: 500;
+        font-size: 1rem;
+        opacity: 0.7;
+    }
+    
+    .datecvc{
+        opacity: 0.7;
+        font-size: 1rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .crdcvc, .crdvld{
+        padding: 0 1rem;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    
+    
+    .crd:nth-of-type(3){
+        display: inline-block;
+    }
+    #date-m, #date-y{
+        border: 1.9px solid rgb(150, 144, 144);
+        border-radius: 8px;
+        margin: 0.3rem;
+        height: 3em;
+        width: 5em;
+        opacity: 0.9;
+    }
+    .datecls, .cvccls{
+        display: block;
+    }
+    #cvc{
+        border-radius: 8px;
+        border: 1.9px solid rgb(150, 144, 144);
+        height: 3em;
+        width: 11em;
+        opacity: 0.9;
+    }
+    
+    .crdsub{
+        border: none;
+        border-radius: 10px;
+        padding: 1rem 0.5rem;
+        width: 100%;
+        font-size: 1.2rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: #26004a;
+        color: white;
+        opacity: 1;
+    }
+    
+}
+
+
+@media screen and (max-width: 700px){
+    .img{
+        margin: auto auto;
+        padding: 0;
+        background: url(./images/bg-main-mobile.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 45%;
+    }
+
+
+    .dbt{
+        /* border: 2px solid white; */
+        z-index: 1;
+        position: absolute;
+        top: 13em;
+        left: 7em;
+        border-radius: 10px;
+        background: url(./images/bg-card-front.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 10em;
+        width: 17em;
+    }
+    
+    
+    .id{
+        color: white;
+        font-family: sans-serif;
+        font-size: 1rem;
+        position: absolute;
+        bottom: 3rem;
+        width: 100%;
+        left: 1rem;
+        letter-spacing: 0.5rem;
+    }
+    
+    .dbt>span{
+        color: white;
+        font-family: sans-serif;
+    }
+    
+    .dbt>span:nth-of-type(1){
+        font-size: 0.9rem;
+        position: absolute;
+        bottom: 1rem;
+        width: 100%;
+        left: 1rem;
+        letter-spacing: 0.3em;
+    }
+    
+    .dbt>span:nth-of-type(2){
+        position: absolute;
+        bottom: 1rem;
+        font-size: 0.8rem;
+        width: 100%;
+        right: -13rem;
+        letter-spacing: 0.1rem;
+    }
+    
+    
+    .dum{
+        position: absolute;
+        top: 7em;
+        left: 12em;
+        border-radius: 10px;
+        background: url(/images/bg-card-back.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 10em;
+        width: 17em;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+
+    .main{
+        /* background-color: rgb(193, 190, 190); */
+        border: 2px dotted red;
+        /* margin: 2em auto; */
+        height: 100%;
+        width: 100%;
+        display: flex;
+        box-shadow: 15px 15px 15px -12px rgb(86, 82, 82);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dbt{
+        /* border: 2px solid white; */
+        z-index: 1;
+        position: absolute;
+        top:13em;
+        left: 3em;
+        border-radius: 10px;
+        background: url(./images/bg-card-front.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 9em;
+        width: 15em;
+    }
+    
+    
+    .id{
+        color: white;
+        font-family: sans-serif;
+        font-size: 0.8rem;
+        position: absolute;
+        bottom: 3rem;
+        width: 100%;
+        left: 1rem;
+        letter-spacing: 0.5rem;
+    }
+    
+    .dbt>span{
+        color: white;
+        font-family: sans-serif;
+    }
+    
+    .dbt>span:nth-of-type(1){
+        font-size: 0.8rem;
+        position: absolute;
+        bottom: 1rem;
+        width: 100%;
+        left: 1rem;
+        letter-spacing: 0.3em;
+    }
+    
+    .dbt>span:nth-of-type(2){
+        position: absolute;
+        bottom: 1rem;
+        font-size: 0.6rem;
+        width: 100%;
+        right: -12rem;
+        letter-spacing: 0.1rem;
+    }
+    
+    
+    .dum{
+        position: absolute;
+        top: 7em;
+        left: 8em;
+        border-radius: 10px;
+        background: url(/images/bg-card-back.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 9em;
+        width: 15em;
+    }
+
+
+    form{
+        text-align: justify;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+    
+    label{
+        display: block;
+        padding-bottom: 0.2rem;
+    }
+    
+    .crd{
+        margin: 0.8rem;
+    }
+    
+    #number, #name{
+        margin: auto auto;
+        text-align: justify;
+        border: 1.9px solid rgb(150, 144, 144);
+        border-radius: 8px;
+        height: 2.5em;
+        width: 22em;
+        padding: 0 0.7rem;
+        font-weight: 500;
+        font-size: 1rem;
+        opacity: 0.7;
+    }
+    
+    .datecvc{
+        opacity: 0.7;
+        font-size: 1rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .crdcvc, .crdvld{
+        padding: 0 1rem;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    
+    
+    .crd:nth-of-type(3){
+        display: inline-block;
+    }
+    #date-m, #date-y{
+        border: 1.9px solid rgb(150, 144, 144);
+        border-radius: 8px;
+        margin: 0.3rem;
+        height: 2.5em;
+        width: 4em;
+        opacity: 0.9;
+    }
+    .datecls, .cvccls{
+        display: block;
+    }
+    #cvc{
+        border-radius: 8px;
+        border: 1.9px solid rgb(150, 144, 144);
+        height: 2.5em;
+        width: 11em;
+        opacity: 0.9;
+    }
+    
+    .crdsub{
+        border: none;
+        border-radius: 10px;
+        padding: 1rem 0.5rem;
+        width: 100%;
+        font-size: 1.2rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: #26004a;
+        color: white;
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 370px){
+    .main{
+        /* background-color: rgb(193, 190, 190); */
+        /* border: 2px dotted red; */
+        /* margin: 2em auto; */
+        height: 83%;
+        width: 100%;
+        display: flex;
+        box-shadow: 15px 15px 15px -12px rgb(86, 82, 82);
+    }
+    
+    .img, .form-sec{
+        /* border: 2px solid green; */
+        height: 100%;
+    }
+    
+    .img{
+        margin: 0;
+        padding: 0;
+        background: url(./images/bg-main-desktop.png);
+        width: 100%;
+        height: 50%;
+    }
+    
+    .form-sec{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .dbt{
+        /* border: 2px solid white; */
+        position: absolute;
+        top: 10em;
+        left: 3em;
+        border-radius: 10px;
+        background: url(./images/bg-card-front.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 9em;
+        width: 15em;
+    }
+    
+    
+    .id{
+        color: white;
+        font-family: sans-serif;
+        font-size: 0.7rem;
+        position: absolute;
+        bottom: 3rem;
+        width: 100%;
+        left: 1rem;
+        letter-spacing: 0.5rem;
+    }
+    
+    .dbt>span{
+        color: white;
+        font-family: sans-serif;
+    }
+    
+    .dbt>span:nth-of-type(1){
+        font-size: 0.8rem;
+        position: absolute;
+        bottom: 1rem;
+        width: 100%;
+        left: 1rem;
+        letter-spacing: 0.3em;
+    }
+    
+    .dbt>span:nth-of-type(2){
+        position: absolute;
+        bottom: 1rem;
+        font-size: 0.6rem;
+        width: 100%;
+        right: -11rem;
+        letter-spacing: 0.1rem;
+    }
+    
+    
+    .dum{
+        position: absolute;
+        top: 6em;
+        left: 6em;
+        border-radius: 10px;
+        background: url(/images/bg-card-back.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 8em;
+        width: 15em;
+    }
+    
+    
+    
+    /* ########################################################## */
+    
+    
+    .thank{
+        margin: auto auto;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .thank-img{
+        margin: 1rem auto;
+        height: 4em;
+        width: 4em;
+    }
+    
+    .thank-head{
+        font-size: 2rem;
+        margin: 1rem auto;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        letter-spacing: 0.2rem;
+    }
+    
+    .thank-para{
+        font-size: 1.5rem;
+        margin: 1.3rem auto;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        letter-spacing: 0.1rem;
+    }
+    
+    .cont{
+        background-color: #26004a;
+        margin: 2rem auto;
+        height: 2.3em;
+        width: 50%;
+        color: white;
+        border-radius: 10px;
+        font-size: 1.3rem;
+        
+    }
+    
+    
+    /* ################################################################ */
+    
+    
+    .form-sec{
+        /* display: none; */
+    }
+    
+    
+    form{
+        text-align: justify;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    
+    label{
+        display: block;
+        padding-bottom: 0.5rem;
+    }
+    
+    .crd{
+        margin: 0.8rem;
+    }
+    
+    #number, #name{
+        margin: auto auto;
+        border: 1.9px solid rgb(150, 144, 144);
+        border-radius: 8px;
+        height: 2.5em;
+        width: 18em;
+        padding: 0 1rem;
+        font-weight: 500;
+        font-size: 1rem;
+        opacity: 0.7;
+    }
+    
+    .datecvc{
+        opacity: 0.7;
+        font-size: 1rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .crdcvc, .crdvld{
+        /* padding: 0 1rem; */
+        font-size: 0.9em;
+        font-weight: 500;
+    }
+    
+    
+    .crd:nth-of-type(3){
+        display: inline-block;
+    }
+    #date-m, #date-y{
+        border: 1.9px solid rgb(150, 144, 144);
+        border-radius: 8px;
+        margin: 0.3rem;
+        height: 2.5em;
+        width: 4em;
+        opacity: 0.9;
+    }
+    .datecls, .cvccls{
+        display: block;
+    }
+    #cvc{
+        border-radius: 8px;
+        border: 1.9px solid rgb(150, 144, 144);
+        height: 2.5em;
+        width: 9em;
+        opacity: 0.9;
+    }
+    
+    .crdsub{
+        border: none;
+        border-radius: 10px;
+        padding: 1rem 0.5rem;
+        width: 100%;
+        font-size: 1.1rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: #26004a;
+        color: white;
+        opacity: 1;
+    }
+    
 }
