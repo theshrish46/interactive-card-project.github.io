@@ -117,6 +117,8 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
+    visibility: hidden;
+    display: none;
 }
 
 .thank-img{
@@ -387,6 +389,7 @@ label{
         justify-content: center;
         align-items: center;
         text-align: center;
+        display: none;
     }
     
     .thank-img{
@@ -572,6 +575,7 @@ label{
         justify-content: center;
         align-items: center;
         text-align: center;
+        display: none;
     }
     
     .thank-img{
@@ -728,6 +732,7 @@ label{
         justify-content: center;
         align-items: center;
         text-align: center;
+        display: none;
     }
     
     .thank-img{
@@ -1194,6 +1199,7 @@ label{
         justify-content: center;
         align-items: center;
         text-align: center;
+        display: none;
     }
     
     .thank-img{
