@@ -1,21 +1,37 @@
-const cardName = document.getElementById('name')
-const cardNumber = document.getElementById('number')
-const month = document.getElementById('date-m')
-const year = document.getElementById('date-y')
-const cvcNumber = document.getElementById('cvc')
+// Accept the inputs form the user
 
-
-const frontPage = document.querySelector('.form-sec')
-const resultPage = document.querySelector('.thank')
-
-resultPage.style.display = 'none'
-
-
-const submitButton = document.querySelector('#submit-button')
-submitButton.addEventListener('click', function(){
-    if(cardName.textContent != " " || cardNumber.textContent != " " || month.textContent != " " || year.textContent != " " || cvcNumber.textContent != " "){
-        frontPage.style.display = 'none'
-        resultPage.style.display = 'block'
-        
+class Card {
+    constructor(name, id, valid){
+        this.name = name;
+        this.id = id;
+        this.valid = valid;
     }
-})
+}
+
+// Display the inputs on the card
+
+class UI {
+    static displayCard() {
+        const StoredCards = [
+            {
+                name : 'Shrish Kerur',
+                id : '1234 5678 8967',
+                valid : '04/27'
+            },
+
+            {
+                name : 'Samarth Kerur',
+                id : '1232 5671 8963',
+                valid : '02/24'
+            },
+        ];
+        const cards = StoredCards;
+    }
+
+    
+}
+
+
+
+
+// Display the thankyou message for 3 seconds
