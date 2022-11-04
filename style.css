@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -894,6 +895,7 @@ label{
     
     .dbt>span{
         color: white;
+        font-size: calc(0.1em + 3vw);
         font-family: sans-serif;
     }
     
